@@ -1,0 +1,116 @@
+.bookingStartContainer {
+    width: 100%;
+    background-color: var(--lighter-constrast-color);
+    display: flex;
+    position: relative;
+}
+
+.calendarContainer {
+    padding: 1em 1em;
+    flex-grow: 1;
+}
+
+.calendarTitle { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calendarTitle h2 {
+    padding-bottom: 0;
+    margin-bottom: 1em;
+    color: var(--secondary-color);
+}
+
+.calendarStyle {
+    width: 100%;
+}
+
+.bookingForm {
+    flex-basis: 30%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookingForm .box {
+    width: 90%;
+    margin-top: 2em;
+    background-color: #FFF;
+    border-radius: 5px;
+    min-height: 4em;
+    padding: 1.9em ;
+    box-shadow: 2px 2px 5px var(--secondary-color);
+}
+
+.box p {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.box button {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 2em;
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+.box button:hover {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 2em;
+    background-color: var(--secondary-color);
+    color: #FFF;
+}
+
+/*--------------------------- Media queries --------------------------------*/
+@media (min-width: 901px) and (max-width: 1100px){
+    .bookingStartContainer {
+        flex-wrap:wrap;
+    }
+
+    .calendarContainer {
+        flex-basis: 100%;
+    }
+
+    .bookingForm .box {
+        width: 95%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+
+    .bookingStartContainer {
+        flex-wrap: wrap;
+        min-height: 40em;
+    }
+
+    .calendarContainer {
+        flex-basis: 100%;
+    }
+
+    .bookingForm .box {
+        width: 95%;
+    }
+}
+
+@media (max-width: 699px){
+    .bookingStartContainer {
+        flex-wrap: wrap;
+        min-height: 40em;
+    }
+
+    .calendarContainer {
+        flex-basis: 100%;
+    }
+
+    .bookingForm .box {
+        width: 95%;
+    }
+}

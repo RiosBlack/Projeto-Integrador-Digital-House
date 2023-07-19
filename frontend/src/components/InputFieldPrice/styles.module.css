@@ -1,0 +1,22 @@
+.inputFieldContainer {
+    width: 100%;
+    margin: 1em 0 0; 
+}
+
+.inputFieldBooking {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.inputFieldContainer .textFieldInput{
+    background-color: white;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.inputFieldBooking .textFieldInput {
+    width: 100%;
+}
+

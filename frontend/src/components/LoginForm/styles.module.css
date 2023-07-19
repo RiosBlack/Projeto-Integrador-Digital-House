@@ -1,0 +1,85 @@
+.containerLoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.containerLoginForm h1{
+    color: var(--primary-color);
+}
+.inputField{
+    width: 32em;
+}
+
+.submitLoginButton {
+    width: 12.8em;
+    height: 2.5em;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--lighter-constrast-color);
+    box-shadow: 2px 2px 3px lightgray;
+    cursor: pointer;
+}
+
+.bookingLoginWarn {
+    position: absolute;
+    top: 10em;
+    background-color: rgba(255, 0, 0, 0.176);
+    width: 30em;
+    height: 4em;
+    display: flex;
+    padding-left: 1em;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.bookingLoginWarn p {
+    padding-left: 1em;
+    font-size: 14px;
+    color: red;
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+    .submitLoginButton {
+        width: 21em;
+    }
+
+    .inputField{
+        width: 21em;
+    }
+
+    .containerLoginForm h1{
+        font-size: 40px;
+    }
+
+    .bookingLoginWarn {
+        width: 25em;
+        top:7em;
+    }
+}
+
+@media (max-width: 699px) {
+    .submitLoginButton {
+        width: 20em
+    }
+
+    .containerLoginForm h1{
+        font-size: 40px;
+    }
+    
+    .bookingLoginWarn {
+        width: 22em;
+        top:7em;
+    }
+
+    .inputField{
+        width: 20em;
+    }
+}

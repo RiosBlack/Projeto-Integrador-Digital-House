@@ -1,0 +1,16 @@
+.templateContainer {
+    width: 100%;
+    background-color: #faf9f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.templateMain {
+    width: 100%;
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 

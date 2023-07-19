@@ -1,0 +1,12 @@
+.containerLogin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkRegister {
+    color: var( --primary-color);
+    text-decoration: none;
+}

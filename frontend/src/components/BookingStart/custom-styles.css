@@ -1,0 +1,104 @@
+.teste .rmdp-top-class {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.teste .rmdp-calendar {
+    display: flex;
+    flex-direction: column;
+}
+.teste .rmdp-day-picker {
+    flex-grow: 1;
+    display: flex;
+}
+
+.teste .rmdp-day-picker > div {
+    flex-grow: 1;
+    width: 10%;
+}
+
+.teste .rmdp-week {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.teste .rmdp-week .rmdp-day {
+    flex-grow: 1;
+}
+
+.teste .rmdp-week .rmdp-day span {
+    border-radius: 0;
+    flex-grow: 1;
+}
+
+.teste .rmdp-week .start {
+    border-radius: 15px 0 0 15px;
+}
+
+.teste .rmdp-week .end {
+    border-radius: 0 15px 15px 0;
+}
+
+.rmdp-range:has(.reserved) {
+    background-color: #8fb4f9;
+}
+
+div.reserved {
+    background-color: #8fb4f9;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/*--------------------------- Media queries --------------------------------*/
+@media (min-width: 901px) and (max-width: 1100px) {
+    .teste .rmdp-day-picker > div {
+        color: red;
+    }
+
+    .teste .rmdp-week {
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+
+    .teste .rmdp-week .rmdp-day {
+        flex-grow: 1;
+    }
+
+    .teste .rmdp-week .rmdp-day span {
+        border-radius: 0;
+        flex-grow: 1;
+    }
+
+    .teste .rmdp-week .start {
+        border-radius: 15px 0 0 15px;
+    }
+
+    .teste .rmdp-week .end {
+        border-radius: 0 15px 15px 0;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .rs-picker-daterange-menu {
+        width: 95%;
+    }
+
+    .calendarContainer {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 699px) {
+    .rs-picker-daterange-menu {
+        align-self: center;
+        justify-content: center;
+        width: 93%;
+    }
+
+    .calendarContainer {
+        flex-basis: 100%;
+    }
+}

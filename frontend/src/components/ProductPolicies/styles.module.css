@@ -1,0 +1,66 @@
+.politiciesContainer {
+    width: 100%;
+    padding: 0.5em 2em;
+    margin-bottom: 2em;
+}
+
+.politiciesContainer h2 {
+    margin-bottom: 0.1em;
+    color: var(--secondary-color);
+}
+
+.politiciesContainer hr {
+    margin-bottom: 0em;
+    border: 1px solid var(--primary-color);
+}
+
+.politiciesContainer h3{
+    margin: 1em 0;
+    color: var(--secondary-color);
+}
+
+.descriptionPolicies {
+    display: flex;
+}
+
+.policy {
+    width: 33%;
+    flex-grow: 1;
+}
+
+.politiciesContainer ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em
+}
+
+.politics {
+    margin-bottom:1em;
+}
+
+/*------------------------------------ Media queries ----------------------------*/
+@media (min-width: 700px) and (max-width: 900px){
+
+    .descriptionPolicies {
+        flex-wrap: wrap;
+    }
+    .policy {
+        width: 50%;
+        flex-grow: 0;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 699px) {
+    .descriptionPolicies {
+        flex-wrap: wrap;
+    }
+    .policy {
+        width: 100%;
+        flex-grow: 0;
+        margin-bottom: 2em;
+    }
+
+}

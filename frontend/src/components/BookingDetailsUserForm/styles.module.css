@@ -1,0 +1,14 @@
+
+.bookingDetailsUserFormContainer {
+    background-color: #FFF;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--darker-constrast-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bookingFormInput {
+    width: 48%;
+}

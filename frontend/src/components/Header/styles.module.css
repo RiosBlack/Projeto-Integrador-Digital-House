@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+.containerHeader {
+    width: 100%;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #daaa2c;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.nameDiv {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.name {
+    font-family: 'Cinzel Decorative';
+    font-size: 25px;
+    color: #daaa2c;
+    line-height: 25px;
+}
+
+.slogan,
+.slogan:hover,
+.slogan:visited {
+    text-decoration: none !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    align-self: center;
+}
+
+.logo h2 {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.clickableH2 {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.logo img {
+    width: 5.5rem;
+    margin-bottom: 2px;
+}
+
+.buttonHeader {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    width: 10.5rem;
+    height: 2.5em;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav {
+    padding: 1rem;
+    margin-top: 0.2rem;
+}
+
+.nav ul {
+    display: flex;
+}
+/* .buttonHeader:hover, .buttonHeaderDisplay:hover{
+    color: var(--secondary-color);
+    background-color: #fff;
+} */
+
+.buttonHeaderDisplay {
+    display: none;
+}
+
+.menuHamburguer {
+    display: none;
+}
+
+@media (max-width: 1090px) {
+    .slogan {
+        font-size: 1rem;
+    }
+    .buttonHeader {
+        font-size: 14px;
+        width: 8rem;
+    }
+    .name {
+        font-size: 22px;
+    }
+    .logo img {
+        width: 4.5rem;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 902px) {
+    .slogan {
+        font-size: 0.9rem;
+    }
+    .buttonHeader {
+        font-size: 14px;
+        width: 8rem;
+    }
+    .name {
+        font-size: 19px;
+    }
+    .logo img {
+        width: 4rem;
+        margin-bottom: 1em;
+    }
+    .slogan,
+    .slogan:hover,
+    .slogan:visited {
+        text-decoration: none !important;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        align-self: center;
+    }
+}
+
+@media (max-width: 699px) {
+    .slogan,
+    .slogan:hover,
+    .slogan:visited {
+        text-decoration: none !important;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        align-self: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo h2 {
+        display: none;
+    }
+}

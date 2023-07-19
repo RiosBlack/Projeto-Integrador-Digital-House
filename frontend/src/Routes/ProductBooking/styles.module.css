@@ -1,0 +1,76 @@
+.space {
+    margin-bottom: 50px;
+}
+
+.productBookingContainer {
+    align-self: flex-start;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lighter-constrast-color);
+}
+
+.productBookingContainer h1 {
+    width: 90%;
+    align-self: center;
+    margin: 0.5em 0 0;
+    color: var(--secondary-color);
+    font-size:32px;
+}
+
+.productBookingDetailsContainer {
+    width: 90%;
+    align-self: center;
+    display: flex;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+
+.productBookingData {
+    width: 66%;
+    border-radius: 10px;
+}
+
+.productBookingDetails {
+    width: 34%;
+}
+
+@media (min-width: 901px) and (max-width: 1100px){
+    .productBookingData {
+        width: 55%;
+    }
+
+    .productBookingDetails {
+        width: 40%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+    .productBookingDetailsContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productBookingData {
+        width: 100%;
+    }
+
+    .productBookingDetails {
+        width: 100%;
+    }
+}
+
+@media (max-width: 699px) {
+    .productBookingDetailsContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productBookingData {
+        width: 100%;
+    }
+
+    .productBookingDetails {
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+
+.imageBoardContainerDesktop {
+    padding: 0.5em 2em;
+    position: relative;
+    height: 30em;
+    display: grid;
+    margin-top:2em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:    "img1 img1 img2 img3"
+                            "img1 img1 img4 img5";
+    grid-gap:0.6em;
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.seeMore {
+    position: absolute;
+    bottom: 1.3em;
+    right: 1em;
+    color: #FFF;
+    padding: 0 2em;
+    font-size: 18px;
+    line-height: 1em;
+    text-decoration: underline;
+}
+
+
+
+
+

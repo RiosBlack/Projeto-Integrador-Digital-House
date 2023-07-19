@@ -1,0 +1,15 @@
+.formControlInputPasswordField {
+    width: 32em;
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+    .formControlInputPasswordField {
+        width: 21em;
+    }
+}
+
+@media (max-width: 699px) {
+    .formControlInputPasswordField {
+        width: 20em
+    }
+}

@@ -1,0 +1,17 @@
+.containerRegister {
+    width: 100%;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerRegister .login, .registerP{
+    color: var(--darker-constrast-color);
+}
+
+.linkLogin {
+    text-decoration: none;
+    color: var(--primary-color);
+}

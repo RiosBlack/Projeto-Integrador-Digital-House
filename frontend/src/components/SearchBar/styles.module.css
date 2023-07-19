@@ -1,0 +1,156 @@
+.searchBarContainer {
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    /* position: sticky; */
+    top: 72px;
+    left: 0px;
+    padding-bottom: 1em;
+    /* z-index: 1; */
+    height: 10em;
+}
+
+.title {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.3em 0 0;
+    margin-bottom: 0;
+}
+
+.searchForm {
+    width: 65%;
+    display: flex;
+    align-self: center;
+    padding: 0.5em 10em;
+}
+
+.whereToGo {
+    position: relative;
+    flex-basis: 40em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    flex-grow: 2;
+    margin-right: 1em;
+}
+
+.locationIcon {
+    position: absolute;
+    top:35%;
+    left: 0.5rem;
+    transform: translate(0,-50%);
+    z-index: 0;
+    color:  #8d8d8d;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.whereToGoInput {
+    width: 100%;
+    padding-left: 3em;
+    margin: 0px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+}
+
+::placeholder {
+    color: #011816;
+}
+
+.inputCheckInOut {
+    flex-basis: 20em;
+    display: flex;
+    color: var(--secondary-color);
+    flex-grow: 2;
+}
+
+
+
+.searchButton {
+    border: none;
+    border-radius: 5px;
+    flex-basis: 8em;
+    margin-left: 1em;
+    color: var(--primary-color);
+    background-color: var(--secundary-color);
+    border: 1px solid var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    flex-grow: 1;
+    cursor: pointer;
+    height: 3em;;
+}
+
+.searchButton:hover{
+    background-color: var(--primary-color);
+}
+
+/*--------------------------------------- Media queries ---------------------------------------*/
+@media (min-width:900px) and (max-width:1124px) {
+
+    .searchBarContainer {
+        height: 10em;
+    }
+
+    .title {
+        font-size: 30px;        
+        padding: 0.3em 0 0;
+        margin-bottom: 0;
+    }
+    
+    .searchForm{
+        padding: 0.5em 2em;
+        width: 65%;
+    }
+
+}
+
+@media (min-width:700px) and (max-width:900px) {
+
+    .searchBarContainer {
+        height: 10em;
+    }
+
+    .title {
+        font-size: 30px;        
+        padding: 0.3em 0 0;
+        margin-bottom: 0;
+    }
+    
+    .searchForm{
+        padding: 0.5em 2em;
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 699px) {
+
+    .searchBarContainer {
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    .title {
+        font-size: 30px;        
+        padding: 0.3em 0 0;
+        margin-bottom: 0;
+        line-height: 1.2em ;
+    }
+
+    .searchForm {
+        padding: 0.5em;
+        flex-wrap: wrap;
+ }
+
+    .whereToGo, .inputCheckInOut, .searchButton {
+        margin: 0 0.5em 0.5em 0.5em;
+    }
+
+    .locationIcon {
+        top:50%;
+    }
+}

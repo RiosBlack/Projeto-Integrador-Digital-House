@@ -1,0 +1,1706 @@
+{
+	"id": "70cefd73-dfc3-48fd-b0e7-2bb9d346fdd5",
+	"name": "INTEGRADOR",
+	"timestamp": "2023-07-03T23:16:28.820Z",
+	"collection_id": "21601683-387d7c64-c127-4d56-9bb6-790ecfdae37a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 72,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-07-03T23:15:13.779Z",
+	"totalFail": 32,
+	"results": [
+		{
+			"id": "74e4a478-e3b6-4306-a60a-bf96349effc8",
+			"name": "POST - LOGIN",
+			"url": "localhost:8080/api/users/login",
+			"time": 2505,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Set access_token env": true
+			},
+			"testPassFailCounts": {
+				"Set access_token env": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2505
+			],
+			"allTests": [
+				{
+					"Set access_token env": true
+				}
+			]
+		},
+		{
+			"id": "b8e84454-6ff8-4055-a93e-9437e19e1468",
+			"name": "POST",
+			"url": "localhost:8080/api/categories",
+			"time": 1062,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When creating a category it checks if the response was successful": true,
+				"Content-Type header is application/json": true,
+				"Check created fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When creating a category it checks if the response was successful": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check created fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1062
+			],
+			"allTests": [
+				{
+					"When creating a category it checks if the response was successful": true,
+					"Content-Type header is application/json": true,
+					"Check created fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "998931c4-c971-4a71-bb07-60b44f8a893d",
+			"name": "GET ALL",
+			"url": "localhost:8080/api/categories",
+			"time": 2548,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query all categories check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query all categories check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2548
+			],
+			"allTests": [
+				{
+					"When query all categories check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "c0f5daad-db5f-4fe3-8c47-de5f67e1b7e7",
+			"name": "GET BY ID",
+			"url": "localhost:8080/api/categories/:categoryId",
+			"time": 377,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When getting category by id needs to receive HTTP code 200": false,
+				"Content-Type header is application/json": false,
+				"Check required fields in response body": false
+			},
+			"testPassFailCounts": {
+				"When getting category by id needs to receive HTTP code 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check required fields in response body": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				377
+			],
+			"allTests": [
+				{
+					"When getting category by id needs to receive HTTP code 200": false,
+					"Content-Type header is application/json": false,
+					"Check required fields in response body": false
+				}
+			]
+		},
+		{
+			"id": "ed4d90f0-88b0-4e35-943f-718a7f9983e7",
+			"name": "GET BY SKU",
+			"url": "localhost:8080/api/categories?sku=2803137",
+			"time": 665,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When getting category by SKU needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When getting category by SKU needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				665
+			],
+			"allTests": [
+				{
+					"When getting category by SKU needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "66dda1b9-215d-4b26-aed4-e9a784986bd1",
+			"name": "EDIT BY ID",
+			"url": "localhost:8080/api/categories/1",
+			"time": 1930,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When editing category by id needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check edited fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When editing category by id needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check edited fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1930
+			],
+			"allTests": [
+				{
+					"When editing category by id needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check edited fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "9e4a14f5-077b-47e2-92f3-73758335eb29",
+			"name": "EDIT BY SKU",
+			"url": "localhost:8080/api/categories?sku=",
+			"time": 322,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When editing category by SKU needs to receive HTTP code 200": false,
+				"Content-Type header is application/json": false,
+				"Check edited fields in response body": false
+			},
+			"testPassFailCounts": {
+				"When editing category by SKU needs to receive HTTP code 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check edited fields in response body": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				322
+			],
+			"allTests": [
+				{
+					"When editing category by SKU needs to receive HTTP code 200": false,
+					"Content-Type header is application/json": false,
+					"Check edited fields in response body": false
+				}
+			]
+		},
+		{
+			"id": "9a971835-1e42-495a-9571-d03d6f339d57",
+			"name": "DELETE BY ID",
+			"url": "localhost:8080/api/categories/3",
+			"time": 1242,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"When deleting category by id needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting category by id needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1242
+			],
+			"allTests": [
+				{
+					"When deleting category by id needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "e38dd094-b264-4a94-b200-9306fa749a2a",
+			"name": "DELETE BY SKU",
+			"url": "localhost:8080/api/categories?sku=",
+			"time": 326,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When deleting category by SKU needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting category by SKU needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				326
+			],
+			"allTests": [
+				{
+					"When deleting category by SKU needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "f7e5343f-6b43-4b25-832a-4330ae331ec5",
+			"name": "POST",
+			"url": "localhost:8080/api/cities",
+			"time": 964,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When creating a city it checks if the response was successful": true,
+				"Content-Type header is application/json": true,
+				"Check created fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When creating a city it checks if the response was successful": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check created fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				964
+			],
+			"allTests": [
+				{
+					"When creating a city it checks if the response was successful": true,
+					"Content-Type header is application/json": true,
+					"Check created fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "fb33bafc-e176-4136-a174-ccbb5fbe9eaf",
+			"name": "GET ALL",
+			"url": "localhost:8080/api/cities",
+			"time": 1263,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query all cities check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query all cities check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1263
+			],
+			"allTests": [
+				{
+					"When query all cities check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "2d0fd8b1-a05b-465a-8148-3c3eb642bfc0",
+			"name": "GET BY ID",
+			"url": "localhost:8080/api/cities/1",
+			"time": 1291,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query a city by id check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query a city by id check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1291
+			],
+			"allTests": [
+				{
+					"When query a city by id check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "c394922a-8f31-43b1-8d7a-aab3733a6861",
+			"name": "GET BY SKU",
+			"url": "localhost:8080/api/cities?citySku=7344863",
+			"time": 500,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query a city by sku check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query a city by sku check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				500
+			],
+			"allTests": [
+				{
+					"When query a city by sku check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "e84be131-b886-47dd-bcf1-ee4058eebfb1",
+			"name": "GET BY DENOMINATION",
+			"url": "localhost:8080/api/cities?cityDenomination=Bahia",
+			"time": 498,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query a city by cityDenomination check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query a city by cityDenomination check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				498
+			],
+			"allTests": [
+				{
+					"When query a city by cityDenomination check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "9826d1d5-7477-4138-bc3b-0d86714a082b",
+			"name": "EDIT BY ID",
+			"url": "localhost:8080/api/cities/1",
+			"time": 1727,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When editing city by id needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check edited fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When editing city by id needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check edited fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1727
+			],
+			"allTests": [
+				{
+					"When editing city by id needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check edited fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "cbc283dd-79f9-4bb3-9673-0e93e490bbd5",
+			"name": "EDIT BY SKU",
+			"url": "localhost:8080/api/cities?citySku=7344863",
+			"time": 961,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When editing city by SKU needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check edited fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When editing city by SKU needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check edited fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				961
+			],
+			"allTests": [
+				{
+					"When editing city by SKU needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check edited fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "efaa3360-76e1-45c4-aa51-a47785098c9d",
+			"name": "DELETE BY ID",
+			"url": "localhost:8080/api/cities/:cityId",
+			"time": 336,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When deleting category by id needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting category by id needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				336
+			],
+			"allTests": [
+				{
+					"When deleting category by id needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "4aab887c-2f26-43c2-908f-7384a4b15b37",
+			"name": "DELETE BY SKU",
+			"url": "localhost:8080/api/cities?citySku=7344863",
+			"time": 1244,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When deleting category by id needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting category by id needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1244
+			],
+			"allTests": [
+				{
+					"When deleting category by id needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "61e9f220-639b-4622-8767-82b5d06607f0",
+			"name": "POST",
+			"url": "localhost:8080/api/products",
+			"time": 1460,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When creating a product it checks if the response was successful": true,
+				"Content-Type header is application/json": true,
+				"Check created fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When creating a product it checks if the response was successful": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check created fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1460
+			],
+			"allTests": [
+				{
+					"When creating a product it checks if the response was successful": true,
+					"Content-Type header is application/json": true,
+					"Check created fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "fa30a60d-b13c-4f16-9b17-7bd2057fa89a",
+			"name": "GET ALL",
+			"url": "localhost:8080/api/products",
+			"time": 6309,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query all products check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query all products check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6309
+			],
+			"allTests": [
+				{
+					"When query all products check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "a3d794f7-4f8b-4b89-88e5-04cafa2257a2",
+			"name": "GET BY ID",
+			"url": "localhost:8080/api/products/2",
+			"time": 1741,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When getting product by id needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When getting product by id needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1741
+			],
+			"allTests": [
+				{
+					"When getting product by id needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "f84ba6ba-8f1d-4472-bd80-20deac11fe38",
+			"name": "GET BY SKU",
+			"url": "localhost:8080/api/products?productSku=9642218",
+			"time": 1245,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When getting product by id needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When getting product by id needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1245
+			],
+			"allTests": [
+				{
+					"When getting product by id needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "6fe703f6-8a3a-4e78-84ba-12fc23f0551a",
+			"name": "GET BY CATEGORY KIND",
+			"url": "localhost:8080/api/products/categories/Premium",
+			"time": 4034,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When getting product by category kind needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When getting product by category kind needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4034
+			],
+			"allTests": [
+				{
+					"When getting product by category kind needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "80354804-50bb-4f07-8542-d574a08048c9",
+			"name": "GET BY CITY DENOMATION",
+			"url": "localhost:8080/api/products/cities/Bahia",
+			"time": 1269,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When getting product by city denomination needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When getting product by city denomination needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1269
+			],
+			"allTests": [
+				{
+					"When getting product by city denomination needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "f5d30d2e-0b6b-40aa-bbfe-d12bfaa0fe1f",
+			"name": "GET AVAILABLES",
+			"url": "localhost:8080/api/products/dates/2023-05-01/2023-12-01",
+			"time": 6394,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When getting available products needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When getting available products needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6394
+			],
+			"allTests": [
+				{
+					"When getting available products needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "59f1817f-6f6a-49f0-9634-aad3a4b007f4",
+			"name": "GET AVAILABLES AT",
+			"url": "localhost:8080/api/products/city/SasáCity/2023-05-01/2023-12-01",
+			"time": 6415,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When getting available products by city denomination needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": false
+			},
+			"testPassFailCounts": {
+				"When getting available products by city denomination needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6415
+			],
+			"allTests": [
+				{
+					"When getting available products by city denomination needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": false
+				}
+			]
+		},
+		{
+			"id": "35042c29-2442-466f-9847-8b0796698081",
+			"name": "EDIT BY ID",
+			"url": "localhost:8080/api/products/2",
+			"time": 2651,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When editing product by id needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check edited fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When editing product by id needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check edited fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2651
+			],
+			"allTests": [
+				{
+					"When editing product by id needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check edited fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "102eb469-c774-44e3-958d-9304ef616b78",
+			"name": "EDIT BY SKU",
+			"url": "localhost:8080/api/products?productSku=9642218",
+			"time": 1898,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When editing product by id needs to receive HTTP code 200": true,
+				"Content-Type header is application/json": true,
+				"Check edited fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When editing product by id needs to receive HTTP code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check edited fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1898
+			],
+			"allTests": [
+				{
+					"When editing product by id needs to receive HTTP code 200": true,
+					"Content-Type header is application/json": true,
+					"Check edited fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "330b2c86-a355-44d5-bd59-38e260a44eca",
+			"name": "DELETE BY ID",
+			"url": "localhost:8080/api/products/:productId",
+			"time": 321,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When deleting product by id needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting product by id needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				321
+			],
+			"allTests": [
+				{
+					"When deleting product by id needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "ece509dd-0fe2-40c6-8ecd-ea745d2cc60a",
+			"name": "DELETE BY SKU",
+			"url": "localhost:8080/api/products?productSku=",
+			"time": 327,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When deleting product by id needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting product by id needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				327
+			],
+			"allTests": [
+				{
+					"When deleting product by id needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "695fcc10-5872-44e5-a14d-dd6e09199c66",
+			"name": "POST",
+			"url": "localhost:8080/api/bookings",
+			"time": 6670,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When creating a booking it checks if the response was successful": false,
+				"Content-Type header is application/json": false,
+				"Check created fields in response body": false
+			},
+			"testPassFailCounts": {
+				"When creating a booking it checks if the response was successful": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check created fields in response body": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6670
+			],
+			"allTests": [
+				{
+					"When creating a booking it checks if the response was successful": false,
+					"Content-Type header is application/json": false,
+					"Check created fields in response body": false
+				}
+			]
+		},
+		{
+			"id": "1ab2e367-9665-4556-8344-5779ab7eb3e6",
+			"name": "GET ALL",
+			"url": "localhost:8080/api/bookings",
+			"time": 2368,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query all bookings check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query all bookings check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2368
+			],
+			"allTests": [
+				{
+					"When query all bookings check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "74bd10eb-8e88-4bc3-be30-1fd5992b996c",
+			"name": "GET BY ID",
+			"url": "localhost:8080/api/bookings/11",
+			"time": 943,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"When getting product by id needs to receive HTTP code 200": false,
+				"Content-Type header is application/json": false,
+				"Check required fields in response body": false
+			},
+			"testPassFailCounts": {
+				"When getting product by id needs to receive HTTP code 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check required fields in response body": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				943
+			],
+			"allTests": [
+				{
+					"When getting product by id needs to receive HTTP code 200": false,
+					"Content-Type header is application/json": false,
+					"Check required fields in response body": false
+				}
+			]
+		},
+		{
+			"id": "f7f8b148-3539-47c1-87b0-024b89f41cf7",
+			"name": "GET BY SKU",
+			"url": "localhost:8080/api/bookings?bookingSku=8975390",
+			"time": 170,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"When getting product by id needs to receive HTTP code 200": false,
+				"Content-Type header is application/json": false,
+				"Check required fields in response body": false
+			},
+			"testPassFailCounts": {
+				"When getting product by id needs to receive HTTP code 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check required fields in response body": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				170
+			],
+			"allTests": [
+				{
+					"When getting product by id needs to receive HTTP code 200": false,
+					"Content-Type header is application/json": false,
+					"Check required fields in response body": false
+				}
+			]
+		},
+		{
+			"id": "da2fd600-952c-423c-8abd-bf2c3dc72b5a",
+			"name": "GET USER BOOKINGS",
+			"url": "localhost:8080/api/bookings?userSku=2888163",
+			"time": 1612,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query all user bookings check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query all user bookings check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1612
+			],
+			"allTests": [
+				{
+					"When query all user bookings check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "a1984d2a-ab11-442c-b2be-e82ca7d700bc",
+			"name": "GET PRODUCT BOOKINGS",
+			"url": "localhost:8080/api/bookings?productSku=3184844",
+			"time": 182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"When query all user bookings check the HTTP code is 200": true,
+				"Content-Type header is application/json": true,
+				"Check required fields in response body": true
+			},
+			"testPassFailCounts": {
+				"When query all user bookings check the HTTP code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check required fields in response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"When query all user bookings check the HTTP code is 200": true,
+					"Content-Type header is application/json": true,
+					"Check required fields in response body": true
+				}
+			]
+		},
+		{
+			"id": "5447a314-3b15-4722-b13a-534279cd12bd",
+			"name": "DELETE BY ID",
+			"url": "localhost:8080/api/bookings/:bookingId",
+			"time": 334,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"When deleting booking by id needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting booking by id needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				334
+			],
+			"allTests": [
+				{
+					"When deleting booking by id needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "0fd67314-c7d2-4a85-98a1-cf98e1e46ebd",
+			"name": "DELETE BY SKU",
+			"url": "localhost:8080/api/bookings?bookingSku=8975390",
+			"time": 497,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"When deleting booking by id needs to receive HTTP code 201": false,
+				"Content-Type header is application/json": false
+			},
+			"testPassFailCounts": {
+				"When deleting booking by id needs to receive HTTP code 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				497
+			],
+			"allTests": [
+				{
+					"When deleting booking by id needs to receive HTTP code 201": false,
+					"Content-Type header is application/json": false
+				}
+			]
+		},
+		{
+			"id": "5acb8dc0-adc8-4f5e-b07d-85eb4a8e72b4",
+			"name": "POST",
+			"url": "localhost:8080/api/functions",
+			"time": 960,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				960
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0aad292a-a49f-4ac8-aaa4-bd546cbaedb7",
+			"name": "GET ALL",
+			"url": "localhost:8080/api/functions",
+			"time": 1279,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1279
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ebea10d1-796b-4030-83fb-13633571e37a",
+			"name": "GET BY NAME",
+			"url": "localhost:8080/api/functions?functionName=Admin",
+			"time": 506,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				506
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1189951b-ff4e-4643-9f66-98843040ba17",
+			"name": "PUT",
+			"url": "localhost:8080/api/functions?functionSku=3631362",
+			"time": 479,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				479
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "02b21f91-b711-4d68-b296-ccdcae18d927",
+			"name": "DELETE",
+			"url": "localhost:8080/api/functions/:functionId",
+			"time": 318,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				318
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 70143,
+	"collection": {
+		"requests": [
+			{
+				"id": "74e4a478-e3b6-4306-a60a-bf96349effc8",
+				"method": "POST"
+			},
+			{
+				"id": "b8e84454-6ff8-4055-a93e-9437e19e1468",
+				"method": "POST"
+			},
+			{
+				"id": "998931c4-c971-4a71-bb07-60b44f8a893d",
+				"method": "GET"
+			},
+			{
+				"id": "c0f5daad-db5f-4fe3-8c47-de5f67e1b7e7",
+				"method": "GET"
+			},
+			{
+				"id": "ed4d90f0-88b0-4e35-943f-718a7f9983e7",
+				"method": "GET"
+			},
+			{
+				"id": "66dda1b9-215d-4b26-aed4-e9a784986bd1",
+				"method": "PUT"
+			},
+			{
+				"id": "9e4a14f5-077b-47e2-92f3-73758335eb29",
+				"method": "PUT"
+			},
+			{
+				"id": "9a971835-1e42-495a-9571-d03d6f339d57",
+				"method": "DELETE"
+			},
+			{
+				"id": "e38dd094-b264-4a94-b200-9306fa749a2a",
+				"method": "DELETE"
+			},
+			{
+				"id": "f7e5343f-6b43-4b25-832a-4330ae331ec5",
+				"method": "POST"
+			},
+			{
+				"id": "fb33bafc-e176-4136-a174-ccbb5fbe9eaf",
+				"method": "GET"
+			},
+			{
+				"id": "2d0fd8b1-a05b-465a-8148-3c3eb642bfc0",
+				"method": "GET"
+			},
+			{
+				"id": "c394922a-8f31-43b1-8d7a-aab3733a6861",
+				"method": "GET"
+			},
+			{
+				"id": "e84be131-b886-47dd-bcf1-ee4058eebfb1",
+				"method": "GET"
+			},
+			{
+				"id": "9826d1d5-7477-4138-bc3b-0d86714a082b",
+				"method": "PUT"
+			},
+			{
+				"id": "cbc283dd-79f9-4bb3-9673-0e93e490bbd5",
+				"method": "PUT"
+			},
+			{
+				"id": "efaa3360-76e1-45c4-aa51-a47785098c9d",
+				"method": "DELETE"
+			},
+			{
+				"id": "4aab887c-2f26-43c2-908f-7384a4b15b37",
+				"method": "DELETE"
+			},
+			{
+				"id": "61e9f220-639b-4622-8767-82b5d06607f0",
+				"method": "POST"
+			},
+			{
+				"id": "fa30a60d-b13c-4f16-9b17-7bd2057fa89a",
+				"method": "GET"
+			},
+			{
+				"id": "a3d794f7-4f8b-4b89-88e5-04cafa2257a2",
+				"method": "GET"
+			},
+			{
+				"id": "f84ba6ba-8f1d-4472-bd80-20deac11fe38",
+				"method": "GET"
+			},
+			{
+				"id": "6fe703f6-8a3a-4e78-84ba-12fc23f0551a",
+				"method": "GET"
+			},
+			{
+				"id": "80354804-50bb-4f07-8542-d574a08048c9",
+				"method": "GET"
+			},
+			{
+				"id": "f5d30d2e-0b6b-40aa-bbfe-d12bfaa0fe1f",
+				"method": "GET"
+			},
+			{
+				"id": "59f1817f-6f6a-49f0-9634-aad3a4b007f4",
+				"method": "GET"
+			},
+			{
+				"id": "35042c29-2442-466f-9847-8b0796698081",
+				"method": "PUT"
+			},
+			{
+				"id": "102eb469-c774-44e3-958d-9304ef616b78",
+				"method": "PUT"
+			},
+			{
+				"id": "330b2c86-a355-44d5-bd59-38e260a44eca",
+				"method": "DELETE"
+			},
+			{
+				"id": "ece509dd-0fe2-40c6-8ecd-ea745d2cc60a",
+				"method": "DELETE"
+			},
+			{
+				"id": "695fcc10-5872-44e5-a14d-dd6e09199c66",
+				"method": "POST"
+			},
+			{
+				"id": "1ab2e367-9665-4556-8344-5779ab7eb3e6",
+				"method": "GET"
+			},
+			{
+				"id": "74bd10eb-8e88-4bc3-be30-1fd5992b996c",
+				"method": "GET"
+			},
+			{
+				"id": "f7f8b148-3539-47c1-87b0-024b89f41cf7",
+				"method": "GET"
+			},
+			{
+				"id": "da2fd600-952c-423c-8abd-bf2c3dc72b5a",
+				"method": "GET"
+			},
+			{
+				"id": "a1984d2a-ab11-442c-b2be-e82ca7d700bc",
+				"method": "GET"
+			},
+			{
+				"id": "5447a314-3b15-4722-b13a-534279cd12bd",
+				"method": "DELETE"
+			},
+			{
+				"id": "0fd67314-c7d2-4a85-98a1-cf98e1e46ebd",
+				"method": "DELETE"
+			},
+			{
+				"id": "5acb8dc0-adc8-4f5e-b07d-85eb4a8e72b4",
+				"method": "POST"
+			},
+			{
+				"id": "0aad292a-a49f-4ac8-aaa4-bd546cbaedb7",
+				"method": "GET"
+			},
+			{
+				"id": "ebea10d1-796b-4030-83fb-13633571e37a",
+				"method": "GET"
+			},
+			{
+				"id": "1189951b-ff4e-4643-9f66-98843040ba17",
+				"method": "PUT"
+			},
+			{
+				"id": "02b21f91-b711-4d68-b296-ccdcae18d927",
+				"method": "DELETE"
+			}
+		]
+	}
+}

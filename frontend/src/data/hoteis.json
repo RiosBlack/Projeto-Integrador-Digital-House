@@ -1,0 +1,52 @@
+[
+    {
+        "img":"https://vejario.abril.com.br/wp-content/uploads/2023/01/Grand-Hyatt-RJ-1.jpg?quality=70&strip=info&w=900&h=599&crop=1",
+        "category":"Hotel",
+        "title":"Hotel Boladao",
+        "location":"Sao Paulo",
+        "description":"Love blinks and purr purr purr purr yawn if human is on laptop sit on the keyboard. Meow loudly just to annoy owners."},
+    {
+        "img":"https://www.viajali.com.br/wp-content/uploads/2022/08/pousadas-em-penedo-100.png",
+        "category":"Pousada",
+        "title":"Pousada Bixo Grilo",
+        "location":"Rio de Janeiro",
+        "description":"Kitty scratches couch bad kitty meow meow you are my owner so here is a dead rat or i see a bird i stare at it i meow at it i do a wiggle come here birdy."
+    },
+    {
+        "img":"https://pontospravoar.com/wp-content/uploads/2022/12/foto-imagem-destacada-Grand-Hyatt-Rio-Fonte-Panorama-de-viagem.jpg",
+        "category":"Luxo",
+        "title":"Mansão Thug",
+        "location":"Florianópolis",
+        "description":"Pretend you want to go out but then don't gimme attention gimme attention gimme attention gimme attention gimme attention gimme attention just kidding i don't want it anymore meow bye cat cat moo moo lick ears lick paws but paw at your fat belly making bread on the bathrobe, get scared by doggo also cucumerro ."
+    },
+    {
+        "img":"https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/itemimages/49/95/4995142_v1.jpeg",
+        "category":"Teste",
+        "title":"Teste 1",
+        "location":"Bahia",
+        "description":"Meow meow sees bird in air, breaks into cage and attacks creature yet grass smells good meow all night having their mate disturbing sleeping humans. Howl on top of tall thing mess up all the toilet paper."},
+    {  
+        "img":"https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2021/09/hotel-418x235.jpeg",
+        "category":"Hotel",
+        "title":"5 Stars",
+        "location":"Belo Horizonte",
+        "description":"Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked."},
+    {
+        "img":"https://naturam.com.br/wp-content/uploads/2022/06/2-pousadas-em-penedo-hotel-girassol-naturam.jpg",
+        "category":"Pousada",
+        "title":"To no mato",
+        "location":"Ubatuba",
+        "description":"Find something else more interesting i love cats i am one wake up scratch humans leg for food then purr then i have a and relax for side-eyes your 'jerk' other hand while being petted and only use one corner of the litter box so go into a room to decide you didn't want to be in there anyway hate dog attempt to leap between furniture but woefully miscalibrate and bellyflop onto the floor; what's your problem?"},
+    {
+        "img":"https://cdn.guiase.net/wp-content/uploads/sites/1219/2020/06/hoteis-de-luxo-brasil3.jpg-2.png",
+        "category":"Luxo",
+        "title":"Money Money",
+        "location":"Guarulhos",
+        "description":"i meant to do that now i shall wash myself intently. "},
+    {
+        "img":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/9d/9d/a3/img-20161105-183734485.jpg?w=700&h=-1&s=1",
+        "category":"Teste",
+        "title":"Testando",
+        "location":"Recife",
+        "description":"Reward the chosen human with a slow blink bite nose of your human i'm going to lap some water out of my master's cup meow but sleeps on my head. Hiss at vacuum cleaner attack curtains"}
+]

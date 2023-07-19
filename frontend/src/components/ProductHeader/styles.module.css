@@ -1,0 +1,25 @@
+
+.productDetailsHeader {
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+.productDetailsHeaderTitles {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.productDetailsHeaderTitles h2, .productDetailsHeaderTitles h4 {
+    color: #FFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+.returnIcon {
+    display: flex;
+    align-items: center;
+}

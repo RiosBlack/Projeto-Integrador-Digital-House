@@ -1,0 +1,11 @@
+.maps { 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0.5em 2em;
+}

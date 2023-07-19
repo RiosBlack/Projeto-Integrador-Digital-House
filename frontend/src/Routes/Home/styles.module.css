@@ -1,0 +1,14 @@
+.homeContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 769px) and (max-width: 1024.99px){
+
+}
+
+@media (max-width: 768.99px) {
+
+}

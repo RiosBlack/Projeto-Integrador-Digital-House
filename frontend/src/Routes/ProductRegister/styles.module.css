@@ -1,0 +1,105 @@
+.productRegisterContainer {
+    width: 100%;
+    padding-bottom: 2em;
+    align-self: flex-start;
+    background-color: var(--lighter-constrast-color);
+    padding-bottom: 100px;
+}
+
+.productRegisterTitle {
+    padding: 0 2em;
+}
+
+.productRegisterTitle h2 {
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+
+.productRegisterFormContainer {
+    width: 100%;
+    padding: 0 2em;
+}
+
+.productRegisterForm {
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    padding: 2em 2em 0; 
+}
+
+.inputsContainer {
+    display: flex;
+    margin-bottom: 1em;
+    gap: 2em;
+}
+
+.inputData{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.inputCity{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.localizador{
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+.div{
+    width: 100%;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+
+
+.insertImagesContainer {
+    width: 100%;
+    padding: 2em 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 699px) {
+    .inputsContainer {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1em;
+    }
+    
+    .localizador{
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.inputData{
+    flex-wrap: wrap;
+    gap: 0;
+}
+}

@@ -1,0 +1,53 @@
+
+.teste .rmdp-top-class {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.teste .rmdp-calendar {
+    display: flex;
+    flex-direction: column;
+}
+.teste .rmdp-day-picker {
+    flex-grow: 1;
+    display: flex;
+    color: red;
+}
+
+.teste .rmdp-day-picker ~ div  {
+    display: flex;
+}
+
+.teste .rmdp-week{
+    display: flex;
+    justify-content: space-around;
+}
+
+.teste .rmdp-week .rmdp-day  {
+    flex-grow: 1;
+}
+
+.teste .rmdp-week .rmdp-day span  {
+    border-radius: 0;
+}
+
+.teste .rmdp-week .start{
+    border-radius: 15px 0 0 15px;
+}
+
+.teste .rmdp-week .end{
+    border-radius: 0 15px 15px 0;
+}
+
+/*--------------------------- Media queries --------------------------------*/
+@media (min-width: 700px) and (max-width: 900px){
+    .calendarContainer {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 699px){
+    .calendarContainer {
+        flex-basis: 100%;
+    }
+}

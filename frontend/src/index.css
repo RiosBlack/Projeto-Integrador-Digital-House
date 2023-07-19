@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+
+/*standard break-points: 
+  900px, 700px
+  699px
+*/
+
+:root {
+  /* --primary-color: #04086f;
+  --secondary-color: #96d1ec;
+  --primary-cta-color: #009688;
+  --secondary-cta-color: #C5E1A5;
+  --lighter-constrast-color: #E0E0E0;
+  --darker-constrast-color: #424242;
+  --main-font: Montserrat;
+  --secondary-font: Open Sans; */
+
+  --primary-color: #DAAA2C;
+  --secondary-color: #012B28;
+  --lighter-constrast-color: #ebe8e1;
+  --darker-constrast-color: #DAAA2C;
+  --main-font: "Montserrat";
+  --secondary-font: Roboto;
+
+  /* --primary-color: #1dbeb4;
+  --secondary-color: #545776;
+  --lighter-constrast-color: #F3F1ED;
+  --darker-constrast-color: #383B58;
+  --main-font: Roboto; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+body{
+  position: relative;
+}
+
+ul {
+  margin-right: 12px;
+  list-style: none;
+  gap: 1.5em;
+}
+
+label {
+  width: 100%;
+  max-width: 28rem;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column; 
+  color: var(--darker-constrast-color);
+  font-size: 12px;
+}
+
+/* input {
+  color: var(--primary-color);
+  height: 3em;
+  margin-top: 0.1rem;
+  border: none;
+  border-radius: 0.3em;
+  padding-left: 10px;
+  box-shadow: 1px 1px 3px var(--darker-constrast-color);
+} */
+
+h2{
+  margin: 20px 0;
+}

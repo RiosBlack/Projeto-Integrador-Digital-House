@@ -1,0 +1,89 @@
+
+.reservationsContainer {
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--lighter-constrast-color);
+}
+
+.reservationContainer {
+    width: 100%;
+    gap: 5em;
+    display: flex;
+    padding: 4em 6em;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.reservationItem{
+    width: 22em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--primary-color);
+    background-color: #FFF;
+}
+
+.reservationItem img {
+    height: 20em;
+    border-radius: 10px 10px 0 0;
+}
+
+.reservationItemDetails {
+    padding: 0 0 1em 1em;
+}
+
+.noReservationsContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--lighter-constrast-color);
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+}
+
+.alertIcon {
+    margin-top: 1em;
+    width: 4em;
+    height: 4em;
+    color: rgba(203, 203, 0, 0.813);
+}
+
+.noReservationsContainer h3 {
+    font-size: 30px;
+    padding: 1em 0;
+    color: var(--secondary-color);
+}
+
+.backHomeIcon {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 1em;
+    color: var(--secondary-color);
+}
+
+.backHomeIcon:hover{
+    cursor: pointer;
+}
+
+.backHomeIcon:active {
+    color: var(--primary-color);
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    .noReservationsContainer {
+        width: 30em;
+    }
+}
+
+@media (max-width:699px) {
+    .noReservationsContainer {
+        width: 25em;
+    }
+}
