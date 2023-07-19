@@ -13,11 +13,6 @@
 
 <h1>Desenvolvimento do projeto:</h1>
 <p>O projeto foi desenvolvido em 60 dias corridos e postado no gitlab do projeto, abaixo se encontra algumas imagens dos comits.</p>
-<img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Projeto/Foto1.jpeg?raw=true">
-
-<h1>Rodando o projeto:</h1>
-<p>Para rodar o projeto, primeiro entra na pasta do backend e roda RenthotelsApplication depois abre o frontend no terminal e roda o front com o npm run dev.</p>
-<p>Estou disponibulizando as imagens do projeto rodando para vocês.</p>
 <img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits1.png?raw=true">
 <hr>
 <img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits2.png?raw=true">
@@ -25,6 +20,12 @@
 <img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits3.png?raw=true">
 <hr>
 <img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits4.png?raw=true">  
+<hr>
+
+<h1>Rodando o projeto:</h1>
+<p>Para rodar o projeto, primeiro entra na pasta do backend e roda RenthotelsApplication depois abre o frontend no terminal e roda o front com o npm run dev.</p>
+<p>Estou disponibulizando as imagens do projeto rodando para vocês.</p>
+<img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Projeto/Foto1.jpeg?raw=true">
 <hr>
 ## ⚙️ Planilhas de Testes
 
