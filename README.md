@@ -1,6 +1,16 @@
-<h1 align="center"> RentHotels </h1>
+<h1 align="center"> Projeto integrador Final Digital House - RentHotels </h1>
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+<p>Esse projeto foi o projeto de encerramento do curso de desenvolvimento fullstack da digital house. O projeto tinha como objetivo criar um sistema de locação de quarto de hotel em 60 dias, sendo que seria abordado os seguintes itens:</p>
+<ul>
+  <li>Front-End - Tecnológia ReactJs</li>
+  <li>BackEnd - Tecnológia Java - SpringBoot</li>
+  <li>Infraestrutura - Tecnológia Docker e Aws (Ec2 e S3)</li>
+  <li>Teste - Testes unitários, manuais e automatizados</li>
+  <li>Banco de dados - Tecnológia MySql</li>
+</ul>
+<h1>O projeto:</h1>
+<p>Nós desenvolvemos todo o projeto do zero, sendo que tivemos varias experiências boas tanto de hard-skil quando de soft-skil. Os integrantes do projeto foram Alexandre da Costa Pedro, Sabrina Freiberger, Gabriella Faria, Everton Paz, Felipe Stefani e eu. Onde tivemos varias dificuldades, como colocar as imagens para ir de forma automática para o s3, como fazer o sistema se comunicar de forma correta com o banco de dados e com frontEnd. Mais todos os problemas foram resolvidos da melhor maneira possivel, e com isso ganhamos muito conhecimento e resiliência para resolver todos os problemas.</p>
+
 
 
 ## ⚙️ Planilhas de Testes
