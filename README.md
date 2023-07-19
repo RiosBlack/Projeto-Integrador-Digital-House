@@ -13,7 +13,7 @@
 
 <h1>Desenvolvimento do projeto:</h1>
 <p>O projeto foi desenvolvido em 60 dias corridos e postado no gitlab do projeto, abaixo se encontra algumas imagens dos comits.</p>
-<img src="">
+<img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Projeto/Foto1.jpeg?raw=true">
 
 <h1>Rodando o projeto:</h1>
 <p>Para rodar o projeto, primeiro entra na pasta do backend e roda RenthotelsApplication depois abre o frontend no terminal e roda o front com o npm run dev.</p>
