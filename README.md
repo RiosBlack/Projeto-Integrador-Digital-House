@@ -18,7 +18,14 @@
 <h1>Rodando o projeto:</h1>
 <p>Para rodar o projeto, primeiro entra na pasta do backend e roda RenthotelsApplication depois abre o frontend no terminal e roda o front com o npm run dev.</p>
 <p>Estou disponibulizando as imagens do projeto rodando para vocês.</p>
-
+<img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits1.png?raw=true">
+<hr>
+<img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits2.png?raw=true">
+<hr>
+<img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits3.png?raw=true">
+<hr>
+<img src="https://github.com/RiosBlack/Projeto-Integrador-Digital-House/blob/main/Images/Commits/Commits4.png?raw=true">  
+<hr>
 ## ⚙️ Planilhas de Testes
 
 - <a href="https://docs.google.com/spreadsheets/d/1B8a0gRP_6_Xejmq4C3WGk58RJAOmlMUv/edit?usp=sharing&ouid=108882354862942027092&rtpof=true&sd=true">Casos de Teste</a>
